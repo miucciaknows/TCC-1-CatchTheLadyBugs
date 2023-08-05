@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21699.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CatchTheBubbles" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_CatchTheLadyBugs" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +22,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ladybug1" translatesAutoresizingMaskIntoConstraints="NO" id="IQm-0A-84t" userLabel="ladybug1">
-                                <rect key="frame" x="20" y="199" width="104" height="147"/>
+                                <rect key="frame" x="20" y="203" width="104" height="147"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="147" id="0ub-JB-22c"/>
@@ -33,21 +34,21 @@
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ladybug2" translatesAutoresizingMaskIntoConstraints="NO" id="zuy-VU-oAO" userLabel="ladybug2">
-                                <rect key="frame" x="155" y="199" width="104" height="147"/>
+                                <rect key="frame" x="155" y="203" width="104" height="147"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="EIG-kC-GKf" appends="YES" id="Jls-7u-fEF"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ladybug3" translatesAutoresizingMaskIntoConstraints="NO" id="brO-0q-xNj" userLabel="ladybug3">
-                                <rect key="frame" x="282" y="199" width="104" height="147"/>
+                                <rect key="frame" x="282" y="203" width="104" height="147"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="ysZ-0n-Nw0" appends="YES" id="xYr-bd-3xf"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ladybug4" translatesAutoresizingMaskIntoConstraints="NO" id="pDL-Sy-obS" userLabel="ladybug4">
-                                <rect key="frame" x="20" y="354" width="104" height="147"/>
+                                <rect key="frame" x="20" y="358" width="104" height="147"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="147" id="jmD-Fc-0hf"/>
@@ -57,35 +58,35 @@
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ladybug5" translatesAutoresizingMaskIntoConstraints="NO" id="Zvx-wc-bSU" userLabel="ladybug5">
-                                <rect key="frame" x="155" y="354" width="104" height="147"/>
+                                <rect key="frame" x="155" y="358" width="104" height="147"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="bHS-Cq-45F" appends="YES" id="byd-Nh-koL"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ladybug1" translatesAutoresizingMaskIntoConstraints="NO" id="Fik-bV-142" userLabel="ladybug6">
-                                <rect key="frame" x="282" y="354" width="104" height="147"/>
+                                <rect key="frame" x="282" y="358" width="104" height="147"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="bfn-RT-jI0" appends="YES" id="QUa-cF-0C9"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ladybug2" translatesAutoresizingMaskIntoConstraints="NO" id="bs2-HL-Bfc" userLabel="ladybug7">
-                                <rect key="frame" x="20" y="509" width="104" height="147"/>
+                                <rect key="frame" x="20" y="513" width="104" height="143"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="2E6-6f-OCt" appends="YES" id="gkA-pz-dtO"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ladybug3" translatesAutoresizingMaskIntoConstraints="NO" id="ual-rM-8UT" userLabel="ladybug8">
-                                <rect key="frame" x="155" y="509" width="104" height="147"/>
+                                <rect key="frame" x="155" y="513" width="104" height="143"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="a2J-fU-qj0" appends="YES" id="Ch7-bA-TK6"/>
                                 </connections>
                             </imageView>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ladybug5" translatesAutoresizingMaskIntoConstraints="NO" id="mzu-B7-cGj" userLabel="ladybug9">
-                                <rect key="frame" x="282" y="509" width="104" height="147"/>
+                                <rect key="frame" x="282" y="513" width="104" height="143"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="Mfa-Hs-l4I" appends="YES" id="Nk3-91-g7n"/>
@@ -169,24 +170,15 @@
                     </view>
                     <connections>
                         <outlet property="highScoreLabel" destination="UmA-Uz-lub" id="67n-Bl-CSb"/>
-                        <outlet property="ladybug1" destination="IQm-0A-84t" id="UCb-14-JgO"/>
-                        <outlet property="ladybug2" destination="zuy-VU-oAO" id="QSZ-Cy-CAE"/>
-                        <outlet property="ladybug3" destination="brO-0q-xNj" id="pC5-2n-tZm"/>
-                        <outlet property="ladybug4" destination="pDL-Sy-obS" id="DxV-Ps-P4F"/>
-                        <outlet property="ladybug5" destination="Zvx-wc-bSU" id="ZWC-2J-hnm"/>
-                        <outlet property="ladybug6" destination="Fik-bV-142" id="hZH-2X-INa"/>
-                        <outlet property="ladybug7" destination="bs2-HL-Bfc" id="hvV-Fe-TLJ"/>
-                        <outlet property="ladybug8" destination="ual-rM-8UT" id="LmM-oC-Fv2"/>
-                        <outlet property="ladybug9" destination="mzu-B7-cGj" id="eXK-EV-gb1"/>
-                        <outlet property="pinch1" destination="wqD-6E-ONB" id="HZ6-jj-dyI"/>
-                        <outlet property="pinch2" destination="EIG-kC-GKf" id="l5k-QD-hm1"/>
-                        <outlet property="pinch3" destination="ysZ-0n-Nw0" id="kf7-cn-dLW"/>
-                        <outlet property="pinch4" destination="Z15-hv-pOx" id="PBs-My-leG"/>
-                        <outlet property="pinch5" destination="bHS-Cq-45F" id="1xz-yO-acc"/>
-                        <outlet property="pinch6" destination="bfn-RT-jI0" id="U6C-dt-7l9"/>
-                        <outlet property="pinch7" destination="2E6-6f-OCt" id="5Lm-yW-2pq"/>
-                        <outlet property="pinch8" destination="a2J-fU-qj0" id="5wX-jS-Qk6"/>
-                        <outlet property="pinch9" destination="Mfa-Hs-l4I" id="Tkf-7t-2XW"/>
+                        <outlet property="ladybug1" destination="IQm-0A-84t" id="YHV-FM-hbQ"/>
+                        <outlet property="ladybug2" destination="zuy-VU-oAO" id="W2j-YD-bcM"/>
+                        <outlet property="ladybug3" destination="brO-0q-xNj" id="czQ-o8-Tbv"/>
+                        <outlet property="ladybug4" destination="pDL-Sy-obS" id="fmO-nS-ZCV"/>
+                        <outlet property="ladybug5" destination="Zvx-wc-bSU" id="29n-GM-dAm"/>
+                        <outlet property="ladybug6" destination="Fik-bV-142" id="8Ee-LD-4Lo"/>
+                        <outlet property="ladybug7" destination="bs2-HL-Bfc" id="4dD-vu-eJJ"/>
+                        <outlet property="ladybug8" destination="ual-rM-8UT" id="Dc3-4G-Z7f"/>
+                        <outlet property="ladybug9" destination="mzu-B7-cGj" id="djr-PD-Kuc"/>
                         <outlet property="scoreLabel" destination="nRH-tk-exn" id="C29-j5-XqA"/>
                         <outlet property="timeLabel" destination="UgL-Qv-eED" id="BDf-rc-X0n"/>
                         <outlet property="view" destination="8bC-Xf-vdC" id="fFg-f0-KEq"/>
@@ -265,7 +257,7 @@
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

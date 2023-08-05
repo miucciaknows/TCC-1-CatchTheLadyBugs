@@ -40,24 +40,15 @@ class ViewController: UIViewController {
    
     //lady bug's images from story board.
     //todas essas imagens das 9 joaninhas estão no story board, eu declarei elas para ver onde ficaram e puxei elas pra cá e referenciando.
-    
-    
+   
     @IBOutlet weak var ladybug1: UIImageView!
-    
     @IBOutlet weak var ladybug2: UIImageView!
-    
     @IBOutlet weak var ladybug3: UIImageView!
-    
     @IBOutlet weak var ladybug4: UIImageView!
-    
     @IBOutlet weak var ladybug5: UIImageView!
-    
     @IBOutlet weak var ladybug6: UIImageView!
-    
     @IBOutlet weak var ladybug7: UIImageView!
-    
     @IBOutlet weak var ladybug8: UIImageView!
-    
     @IBOutlet weak var ladybug9: UIImageView!
     
 

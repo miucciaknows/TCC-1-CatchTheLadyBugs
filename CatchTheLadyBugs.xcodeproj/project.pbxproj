@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0F40BC1525C46F0900BAF2E7 /* CatchTheBubbles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatchTheBubbles.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F40BC1525C46F0900BAF2E7 /* $CatchTheLadyBugs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = $CatchTheLadyBugs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F40BC1825C46F0900BAF2E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F40BC1A25C46F0900BAF2E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0F40BC1C25C46F0900BAF2E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +24,7 @@
 		0F40BC2125C46F0B00BAF2E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F40BC2425C46F0B00BAF2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F40BC2625C46F0B00BAF2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAD788802A7EE3720089A676 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +49,7 @@
 		0F40BC1625C46F0900BAF2E7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0F40BC1525C46F0900BAF2E7 /* CatchTheBubbles.app */,
+				0F40BC1525C46F0900BAF2E7 /* $CatchTheLadyBugs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +85,7 @@
 			);
 			name = CatchTheBubbles;
 			productName = CatchTheBubbles;
-			productReference = 0F40BC1525C46F0900BAF2E7 /* CatchTheBubbles.app */;
+			productReference = 0F40BC1525C46F0900BAF2E7 /* $CatchTheLadyBugs.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -93,8 +94,9 @@
 		0F40BC0D25C46F0900BAF2E7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					0F40BC1425C46F0900BAF2E7 = {
 						CreatedOnToolsVersion = 12.4;
@@ -150,6 +152,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0F40BC1F25C46F0900BAF2E7 /* Base */,
+				EAD788802A7EE3720089A676 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -289,12 +292,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68T5YJGRM7;
 				INFOPLIST_FILE = "$(SRCROOT)/CatchTheLadyBugs/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = CatchTheLadyBugs;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aydoganpederli.CatchTheLadyBugs;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = $CatchTheLadyBugs;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,12 +312,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68T5YJGRM7;
 				INFOPLIST_FILE = "$(SRCROOT)/CatchTheLadyBugs/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = CatchTheLadyBugs;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = aydoganpederli.CatchTheLadyBugs;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = $CatchTheLadyBugs;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
