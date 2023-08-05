@@ -13,6 +13,8 @@
 		0F40BC2025C46F0900BAF2E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F40BC1E25C46F0900BAF2E7 /* Main.storyboard */; };
 		0F40BC2225C46F0B00BAF2E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F40BC2125C46F0B00BAF2E7 /* Assets.xcassets */; };
 		0F40BC2525C46F0B00BAF2E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F40BC2325C46F0B00BAF2E7 /* LaunchScreen.storyboard */; };
+		EAD788822A7F0D3F0089A676 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD788812A7F0D3F0089A676 /* GameLogic.swift */; };
+		EAD788842A7F0E0E0089A676 /* UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD788832A7F0E0E0089A676 /* UIConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		0F40BC2425C46F0B00BAF2E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F40BC2625C46F0B00BAF2E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAD788802A7EE3720089A676 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		EAD788812A7F0D3F0089A676 /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
+		EAD788832A7F0E0E0089A676 /* UIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				0F40BC1825C46F0900BAF2E7 /* AppDelegate.swift */,
 				0F40BC1A25C46F0900BAF2E7 /* SceneDelegate.swift */,
 				0F40BC1C25C46F0900BAF2E7 /* ViewController.swift */,
+				EAD788812A7F0D3F0089A676 /* GameLogic.swift */,
+				EAD788832A7F0E0E0089A676 /* UIConfiguration.swift */,
 				0F40BC1E25C46F0900BAF2E7 /* Main.storyboard */,
 				0F40BC2125C46F0B00BAF2E7 /* Assets.xcassets */,
 				0F40BC2325C46F0B00BAF2E7 /* LaunchScreen.storyboard */,
@@ -139,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD788842A7F0E0E0089A676 /* UIConfiguration.swift in Sources */,
 				0F40BC1D25C46F0900BAF2E7 /* ViewController.swift in Sources */,
 				0F40BC1925C46F0900BAF2E7 /* AppDelegate.swift in Sources */,
+				EAD788822A7F0D3F0089A676 /* GameLogic.swift in Sources */,
 				0F40BC1B25C46F0900BAF2E7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
