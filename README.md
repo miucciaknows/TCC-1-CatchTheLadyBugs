@@ -1,11 +1,20 @@
-# TCC-1-Mackenzie
-#Jogo do movimento pinça para reabilitação motora.
-#Game using pinch gesture to hand rehabilitation.
+# Catch the Lady Bugs
 
-Game interface preview:
+## English
+This game was 1 of 3 that i developed for final project during my undergratute in Information System (Universidade Presbiteriana Mackenzie, São Paulo; Brazil).
 
-![Simulator Screen Shot - iPhone 12 Pro - 2021-03-26 at 00 15 51](https://user-images.githubusercontent.com/81270839/112572503-095d8980-8dc9-11eb-85d3-e7b139a7863d.png)
+The primary objective of this game is to teaching children and rehabilitation patients improving their fine motor skills. 
 
-![Simulator Screen Shot - iPhone 12 Pro - 2021-03-26 at 00 16 28](https://user-images.githubusercontent.com/81270839/112572525-15494b80-8dc9-11eb-8159-b4581a118aad.png)
+In this project, i utilized **swift** and **objective-c** completemented by the integration of a few frameworks.
 
-![Simulator Screen Shot - iPhone 12 Pro - 2021-03-26 at 00 18 40](https://user-images.githubusercontent.com/81270839/112572530-17aba580-8dc9-11eb-99f2-b29d10a1baa5.png)
+## Portuguese
+
+Esse jogo foi um dos três que desenvolvi em meu tcc durante minha graduação em Sistemas de Informação(Universidade Presbiteriana Mackenzie, São Paulo; Brasil)
+
+O objetivo primario deste jogo é ensinar crianças e pacientes de reabilitação a melhorarem suas habilidades motoras finas.
+
+Nesse projeto, eu utilizei **swift** e **objective-c** e integrei alguns frameworks.
+
+
+
+
