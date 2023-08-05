@@ -1,7 +1,7 @@
 //Desenvolvido do dia 19 ao dia 22 de Novembro de 2021
 //Versão da interface em Português BR
 //This game has been made in 2021.
-//This interface has been created to be in portuguese, all objects and gestures are in English for better understand.
+//This interface has been created to be in Portuguese, all objects and gestures are in English for better understand.
 //Controller
 
 import UIKit
@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-//Isso aqui não está sendo usado no momento, deixei por default porque estava tentando puxar o gesture "pinça" do story board e achei que a implementação ficaria melhor por aqui, qualquer duvida me pergunte.
     //Ignore here
 /*
     @IBOutlet var pinch1: UIPinchGestureRecognizer!
@@ -23,6 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet var pinch9: UIPinchGestureRecognizer!
     //From here.
     */
+    
     //Variaveis do jogo como array da joaninha, variavel de tempo, contator, pontuação, maior pontuação.
     //Declaring variables such as lady array, time, time, counter, score and high score.
     
@@ -38,8 +38,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var highScoreLabel: UILabel!
    
-    //lady bug's images from story board.
-    //todas essas imagens das 9 joaninhas estão no story board, eu declarei elas para ver onde ficaram e puxei elas pra cá e referenciando.
+    //Lady bug's images from storyboard.
+    //Todas essas imagens das 9 joaninhas estão no storyboard, eu declarei elas para ver onde ficaram e puxei elas pra cá referenciando.
    
     @IBOutlet weak var ladybug1: UIImageView!
     @IBOutlet weak var ladybug2: UIImageView!
@@ -55,21 +55,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//Função para pinch gesture que puxei atraves do story board, por favor ignorem porque foi apenas teste, deixei de back up.
-/*
-        func handlePan(_ gesture: UIPinchGestureRecognizer) {
-             guard let gestureView = gesture.view else {
-               return
-             }
-
-            gestureView.transform = gestureView.transform.scaledBy(
-              x: gesture.scale,
-              y: gesture.scale
-            )
-            gesture.scale = 1
-        }
-
- */
         //HighScore Check
         let storeHighScore = UserDefaults.standard.object(forKey: "HighScore")
     
@@ -121,6 +106,7 @@ class ViewController: UIViewController {
         let recognizer7 = UIPinchGestureRecognizer(target: self, action: #selector(increaseScore))
         let recognizer8 = UIPinchGestureRecognizer(target: self, action: #selector(increaseScore))
         let recognizer9 = UIPinchGestureRecognizer(target: self, action: #selector(increaseScore))
+        
         //A escada do "zoom" da pinça se controla por aqui, lembrando que a Apple diz que o valor default é de 1.
         //Value default recommended from Apple is 1.
         recognizer1.scale = 3
@@ -133,8 +119,7 @@ class ViewController: UIViewController {
         recognizer8.scale = 3
         recognizer9.scale = 3
         
-        //Adicionando o reconhecimento de gesto "pinça" para as joaninhas.
-        
+        //Add gesture "pinch" recognizer to their objects/images
         ladybug1.addGestureRecognizer(recognizer1)
         ladybug2.addGestureRecognizer(recognizer2)
         ladybug3.addGestureRecognizer(recognizer3)
@@ -145,9 +130,8 @@ class ViewController: UIViewController {
         ladybug8.addGestureRecognizer(recognizer8)
         ladybug9.addGestureRecognizer(recognizer9)
         
-        //Não precisa dizer nada, né? o nome diz o que isso faz.
-        //The name say for itself.
-        
+
+        //Lady bug's array to store all the ladybugs.
         ladybugArray = [ladybug1,ladybug2,ladybug3,ladybug4,ladybug5,ladybug6,ladybug7, ladybug8, ladybug9]
         
         hideladybug()
@@ -156,8 +140,7 @@ class ViewController: UIViewController {
     
 
     
-    //Função esconde a joaninha enquanto uma está aparecendo de cada vez.
-    
+    //Function to hide each ladybug while one is on the screen...
    @objc func hideladybug(){
         for ladybug in ladybugArray {
             ladybug.isHidden=true
@@ -167,11 +150,10 @@ class ViewController: UIViewController {
     ladybugArray[random].isHidden = false
     }
     
-    //Função onde acrescenta meio ponto quando faz a pinça, lembrando que se a pinça continuar "aberta" ele vai continuar computando pontos. Coloquei o valor de score baixo por essa razão. Quanto mais tempo manter os dedos em aberto, maior será a pontuação no final do jogo.
-    //I set the score value low for a reason: the longer you keeping your two fingers open more higher your score at the end of the game will be.
-    
+
+    //Giving half point when user pinch the ladybug.
     @objc func increaseScore(){
-        score += 0.2
+        score += 0.5
         scoreLabel.text="Pontos: \(score)"
         
     }
@@ -199,7 +181,6 @@ class ViewController: UIViewController {
             time.invalidate()
             
             //Alert
-            //Caso o usuario queira jogar novamente.
             //"if you want to play again" alert.
             let alert = UIAlertController(title: "Você jogou durante 2 minutos... ", message: "Gostaria de jogar novamente?", preferredStyle: UIAlertController.Style.alert)
             let okButton = UIAlertAction(title: "Não", style: UIAlertAction.Style.cancel, handler: nil)
