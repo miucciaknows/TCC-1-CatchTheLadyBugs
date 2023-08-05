@@ -5,11 +5,11 @@
 //  Created by Nathalia Trazzi on 05/08/23.
 //
 
-import Foundation
 import UIKit
 
 extension ViewController {
-    @objc func hideladybug() {
+    
+    @objc func hideladybug(){
         for ladybug in ladybugArray {
             ladybug.isHidden = true
         }
@@ -18,57 +18,44 @@ extension ViewController {
         ladybugArray[random].isHidden = false
     }
     
-    @objc func increaseScore() {
+    @objc func increaseScore(){
         score += 0.5
         scoreLabel.text = "Pontos: \(score)"
     }
     
-    @objc func timefunc() {
+    @objc func timefunc(){
         counter -= 1
         timeLabel.text = "Tempo restante: \(counter)"
        
         if counter == 0 {
-            endGame()
+            hideTimer.invalidate()
+            
+            for ladybug in ladybugArray {
+                ladybug.isHidden = true
+            }
+            
+            if score > highScore {
+                highScore = score
+                highScoreLabel.text = "Recorde: \(score)"
+                
+                UserDefaults.standard.set(highScore, forKey: "Recorde: ")
+            }
+                
+            timeLabel.text = "O Tempo acabou!"
+            time.invalidate()
+            
+            let alert = UIAlertController(title: "Você jogou durante 2 minutos... ", message: "Gostaria de jogar novamente?", preferredStyle: UIAlertController.Style.alert)
+            let okButton = UIAlertAction(title: "Não", style: UIAlertAction.Style.cancel, handler: nil)
+            let restartButton = UIAlertAction(title: "Sim", style: UIAlertAction.Style.default) { (UIAlertAction) in
+                self.restartGame()
+            }
+            alert.addAction(okButton)
+            alert.addAction(restartButton)
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
-    func endGame() {
-        hideTimer.invalidate()
-        hideLadybugs()
-        
-        if score > highScore {
-            highScore = score
-            highScoreLabel.text = "Recorde: \(score)"
-            UserDefaults.standard.set(highScore, forKey: "Recorde: ")
-        }
-        
-        timeLabel.text = "O Tempo acabou!"
-        time.invalidate()
-        
-        showAlert()
-    }
-    
-    func hideLadybugs() {
-        for ladybug in ladybugArray {
-            ladybug.isHidden = true
-        }
-    }
-    
-    func showAlert() {
-        let alert = UIAlertController(title: "Você jogou durante 2 minutos... ", message: "Gostaria de jogar novamente?", preferredStyle: .alert)
-        
-        let okButton = UIAlertAction(title: "Não", style: .cancel, handler: nil)
-        
-        let restartButton = UIAlertAction(title: "Sim", style: .default) { _ in
-            self.restartGame()
-        }
-        
-        alert.addAction(okButton)
-        alert.addAction(restartButton)
-        present(alert, animated: true, completion: nil)
-    }
-    
-    func restartGame() {
+    private func restartGame() {
         score = 0
         scoreLabel.text = "Pontuação: \(score)"
         counter = 60
